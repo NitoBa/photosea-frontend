@@ -2,15 +2,13 @@ import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
 
-
-
 :root{
   --primaryColor:#9D3BE1;
   --primaryColorLight:#BA73EB;
   --primaryColorDark: #6A2799;
   --whatsappColor:#25D366;
   --whatsappColorDark:#075E54;
-  --bodyColor:#CEDEE5;
+  --bodyColor:#ebf2f5;
   --gradientColor:linear-gradient(329.54deg, #D22FAF 0%, #9D3BE1 100%);
 
 /* 
@@ -59,14 +57,16 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  /* font-family: 'Poppins', sans-serif; */
-
 }
 
 body{
+  color: #fff;
+  background-color:var(--bodyColor);
   overflow-x:hidden;
+}
+
+input, body, button{
+  font: 600 18px Nunito, sans-serif;
 }
 
 button {

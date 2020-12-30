@@ -1,6 +1,9 @@
 import Head from 'next/head'
+import Link from 'next/link';
 import { useState } from 'react'
+import { FiArrowRight } from 'react-icons/fi'
 import { connectToFirebase } from '../utils/firebase';
+import { Container } from '../../styles/pages'
 
 interface ImageProps {
   avatar_name: string;
@@ -93,13 +96,41 @@ const Teste = () => {
 
 const Home: React.FC = () => {
   return (
-    <div>
+    <>
       <Head>
         <title>PhotoSea</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>Hello</h1>
-    </div>
+      <Container>
+        <header>
+
+          <div id="content-header">
+            <img src="logo.svg" alt="logo" id="logo" />
+            <div className="location">
+              <strong>Teresina</strong>
+              <span>Piauí</span>
+
+            </div>
+          </div>
+        </header>
+        <div className="content-wrapper">
+
+          <h1>
+            A plataforma <br /> que conecta <br /> serviços de <br /> fotografia a <br /> clientes
+        </h1>
+          <img src="ilustration.svg" alt="ilustration" />
+        </div>
+
+        <footer>
+          <span>
+            Encontre um fotógrafo mais <br /> perto de você
+          </span>
+          <Link href="">
+            <FiArrowRight className='enter-app' />
+          </Link>
+        </footer>
+      </Container>
+    </>
   );
 }
 
