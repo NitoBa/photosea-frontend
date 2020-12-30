@@ -125,7 +125,7 @@ const Home: React.FC = () => {
           <span>
             Encontre um fotógrafo mais <br /> perto de você
           </span>
-          <Link href="">
+          <Link href="/app">
             <FiArrowRight className='enter-app' />
           </Link>
         </footer>
