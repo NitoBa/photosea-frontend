@@ -50,7 +50,7 @@ export const Container = styled.div`
               margin:0;
               >h1{
                   margin-bottom:0;
-                  font-size:20px;
+                  font-size:18px;
                   line-height:22px;
                   margin-left:15px;
               }

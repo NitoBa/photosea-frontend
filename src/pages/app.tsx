@@ -9,7 +9,7 @@ const PhotographerMap: React.FC = () => {
     const MapWithNoSSR = dynamic(() => import("../components/map"), {
         loading: () => <div style={{ color: 'black', width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }} >
             <h1>
-                Map is loading
+                Map is loading...
             </h1>
         </div>,
         ssr: false
