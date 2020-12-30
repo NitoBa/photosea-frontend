@@ -5,15 +5,15 @@ export default createGlobalStyle`
 
 
 :root{
-  --primaryColor:#C95CEE;
-  --primaryColorLight:#E6BBF4;
-  --primaryColorDark: #7E1AA0;
+  --primaryColor:#9D3BE1;
+  --primaryColorLight:#BA73EB;
+  --primaryColorDark: #6A2799;
   --whatsappColor:#25D366;
   --whatsappColorDark:#075E54;
-  --bodyColor:#FCF7F7;
-  --gradientColor:rgb(236, 215, 243, 0.8);
+  --bodyColor:#CEDEE5;
+  --gradientColor:linear-gradient(329.54deg, #D22FAF 0%, #9D3BE1 100%);
 
-
+/* 
   @font-face {
     font-family: 'Poppins';
     font-style:normal;
@@ -49,7 +49,7 @@ export default createGlobalStyle`
     font-weight:800;
     font-display:swap;
     src: url('/fonts/Poppins-Bold.ttf') format('truetype');
-  }
+  } */
  
 }
 
